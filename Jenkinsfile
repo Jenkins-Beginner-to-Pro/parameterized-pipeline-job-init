@@ -2,7 +2,7 @@
 pipeline {
   agent any
   stages {
-    stage('Build') {
+    stage('Building') {
       steps {
         sh 'mvn clean package -DskipTests=true'
         archiveArtifacts 'target/hello-demo-*.jar'
